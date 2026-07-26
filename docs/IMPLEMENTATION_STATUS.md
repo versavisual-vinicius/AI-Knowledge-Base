@@ -44,13 +44,13 @@
 - Critério de aceite: cada harness e cada dor recorrente possuem cenário,
   prompt e comportamento esperado
 - Evidência: `evals/cases.json` e `evals/README.md`
-- Limitação: execução real disponível apenas para Codex e Antigravity neste
-  ambiente; os demais casos aguardam os respectivos CLIs
+- Limitação: execução real concluída no Codex e no Antigravity neste ambiente;
+  os demais casos aguardam os respectivos CLIs
 - Aprovação humana: Approved — Vini, 2026-07-26
 
 ## Etapa 5 — Licenças e instalação
 
-- Status: In Progress
+- Status: Approved
 - Escopo: atribuição de terceiros e instruções curtas de instalação por harness
 - Fora do escopo: publicação em marketplace e configuração automática de contas
 - Critério de aceite: origem/licença dos componentes registrada e instalação
@@ -59,4 +59,21 @@
   licença própria MIT e a atribuição MIT do Superpowers estão separadas
 - Validação documental: comandos locais registrados para Claude Code,
   OpenCode, Kimi e Pi; nenhum login ou instalação externa foi executado
-- Aprovação humana: Pending
+- Aprovação humana: Approved — Vini, 2026-07-26
+
+## Etapa 6 — Validação real e pacote local
+
+- Status: Approved
+- Escopo: validar o núcleo nos harnesses disponíveis e gerar pacote local
+  determinístico para distribuição controlada
+- Fora do escopo: publicar em marketplace, instalar contas ou declarar runtime
+  validado nos harnesses ausentes
+- Critério de aceite: Codex e Antigravity têm validação local registrada; o
+  pacote contém os componentes obrigatórios e exclui artefatos temporários
+- Evidência: `codex exec --ephemeral --sandbox read-only` leu o bootstrap,
+  manifesto, `SPEC.md` e cinco skills sem alterar arquivos; `agy plugin
+  validate .`, validadores do núcleo e `scripts/package_core.py` produziram e
+  verificaram um ZIP de 49 arquivos
+- Limitações: Claude, Gemini CLI, OpenCode, Kimi e Pi ainda aguardam sessões
+  reais; os testes comportamentais completos continuam não automatizados
+- Aprovação humana: Approved — Vini, 2026-07-26

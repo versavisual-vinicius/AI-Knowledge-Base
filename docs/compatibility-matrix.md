@@ -1,8 +1,8 @@
 # Matriz de compatibilidade — núcleo inicial
 
 Status desta etapa: `Approved`; os sete adapters foram implementados e
-validados estruturalmente. A validação em runtime ainda depende da instalação
-de cada harness.
+validados estruturalmente. Codex e Antigravity também foram validados em
+runtime; os demais dependem da instalação de cada harness.
 
 | Harness | Bootstrap previsto | Skills nativas | Hooks/extensão | Estado |
 |---|---|---:|---:|---|
@@ -23,7 +23,9 @@ de cada harness.
 - registrar limitações e evidências por harness;
 - manter o núcleo agnóstico de fornecedor.
 
-## Próxima etapa autorizável
+## Manutenção e expansão futura
 
-Executar a validação em runtime nos harnesses ainda pendentes, sem adicionar
-workflows específicos, assets ou automações de publicação.
+Quando os harnesses pendentes estiverem instalados, executar sua validação em
+runtime e registrar as evidências sem alterar o núcleo aprovado. Expansões
+futuras devem continuar curtas, aprováveis e fora de publicação automática,
+workflows específicos ou incorporação de assets de terceiros.

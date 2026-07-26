@@ -86,3 +86,14 @@ declara as skills e a extensão `.pi/extensions/ai-knowledge-base.ts`.
 
 Não inserir tokens, chaves, cookies ou credenciais nos arquivos do repositório.
 Validar o harness real antes de declarar compatibilidade concluída.
+
+## Empacotamento local
+
+Para gerar um ZIP determinístico do núcleo, execute na raiz do repositório:
+
+```bash
+python3 scripts/package_core.py --output /tmp/ai-knowledge-base-core.zip
+```
+
+O pacote inclui manifestos, adapters, skills, referências, evals, scripts e
+documentação. O diretório `dist/` e artefatos temporários não são incluídos.
