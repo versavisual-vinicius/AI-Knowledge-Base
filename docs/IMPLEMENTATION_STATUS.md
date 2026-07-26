@@ -74,7 +74,7 @@
 - Evidência: `codex exec --ephemeral --sandbox read-only` leu o bootstrap,
   manifesto, `SPEC.md` e cinco skills sem alterar arquivos; `agy plugin
   validate .`, validadores do núcleo e `scripts/package_core.py` produziram e
-  verificaram um ZIP de 49 arquivos
+  verificaram um ZIP determinístico de 57 arquivos
 - Limitações: Claude, Gemini CLI, OpenCode, Kimi e Pi ainda aguardam sessões
   reais; o executor automatiza a avaliação dos resultados, mas não substitui
   a execução do caso no harness do usuário

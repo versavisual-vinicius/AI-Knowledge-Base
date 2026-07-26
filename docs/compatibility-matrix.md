@@ -4,6 +4,9 @@ Status desta etapa: `Approved`; os sete adapters foram implementados e
 validados estruturalmente. Codex e Antigravity também foram validados em
 runtime; os demais dependem da instalação de cada harness.
 
+O formato obrigatório para novas evidências está em
+[`docs/runtime-evidence-template.md`](runtime-evidence-template.md).
+
 | Harness | Bootstrap previsto | Skills nativas | Hooks/extensão | Estado |
 |---|---|---:|---:|---|
 | Codex | plugin manifest + `BOOTSTRAP.md` | Sim | Plugin | Implemented; runtime validated |
