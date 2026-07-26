@@ -14,6 +14,8 @@ Centralizar instruções, padrões técnicos, decisões arquiteturais, integraç
 - `03_BUSINESS/`: regras de negócio e fluxos.
 - `04_INTEGRATIONS/`: documentação operacional das integrações.
 - `05_PROJECTS/`: contexto e documentação específica de cada projeto.
+  - `EventManager/`: produto separado, em reposicionamento para noivas.
+  - `VersaVisual-Educacao/`: unificação do curso, simulador e fontes editoriais no site oficial.
 
 ## Uso no Google AI Studio
 
