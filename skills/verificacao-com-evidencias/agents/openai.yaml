@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verificação com evidências"
+  short_description: "Conclua com evidências reais"
+  default_prompt: "Use $verificacao-com-evidencias para validar a etapa com checks proporcionais e registrar o que foi comprovado."

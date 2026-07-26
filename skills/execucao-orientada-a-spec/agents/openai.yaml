@@ -1,0 +1,4 @@
+interface:
+  display_name: "Execução orientada a spec"
+  short_description: "Construa por etapas aprovadas"
+  default_prompt: "Use $execucao-orientada-a-spec para conduzir o projeto por SPEC.md aprovado, etapas curtas e aprovação humana."

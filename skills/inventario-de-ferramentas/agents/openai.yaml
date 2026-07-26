@@ -1,0 +1,4 @@
+interface:
+  display_name: "Inventário de ferramentas"
+  short_description: "Mapeie ferramentas antes de construir"
+  default_prompt: "Use $inventario-de-ferramentas para montar o guia de ferramentas, serviços e alternativas do início ao fim."

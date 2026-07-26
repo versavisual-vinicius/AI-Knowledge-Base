@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project Specification",
+  "type": "object",
+  "required": ["objective", "scope", "acceptanceCriteria", "approval"],
+  "properties": {
+    "objective": {"type": "string", "minLength": 1},
+    "scope": {"type": "array", "items": {"type": "string"}},
+    "acceptanceCriteria": {"type": "array", "items": {"type": "string"}},
+    "approval": {"enum": ["Pending", "Approved", "Changes Requested"]}
+  }
+}

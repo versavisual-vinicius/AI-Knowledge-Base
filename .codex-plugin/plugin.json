@@ -1,0 +1,16 @@
+{
+  "name": "ai-knowledge-base",
+  "version": "0.2.0",
+  "description": "Skills reutilizáveis para contexto, especificação, diagnóstico, ferramentas e verificação de projetos.",
+  "author": {"name": "VersaVisual"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Knowledge Base",
+    "shortDescription": "Workflow reutilizável para projetos",
+    "longDescription": "Converte padrões da base de conhecimento da VersaVisual em skills, playbooks, referências e validações reutilizáveis.",
+    "developerName": "VersaVisual",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Consulte as skills relevantes antes de agir e conduza o projeto por SPEC.md aprovado, etapas curtas e evidências."
+  }
+}

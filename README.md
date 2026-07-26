@@ -31,3 +31,34 @@ Evite anexar toda a base sem necessidade. Use o menor conjunto de contexto capaz
 ## Regra principal
 
 A documentação do projeto é a fonte de verdade. Quando houver conflito entre instruções genéricas e documentos específicos do projeto, prevalece o documento específico do projeto.
+
+## Plugin e skills
+
+Este repositório também é um plugin Codex instalável. O núcleo fica em:
+
+- `skills/`: uma skill por dor recorrente;
+- `scripts/`: validações determinísticas;
+- `references/`: contratos, templates, schemas e decisões;
+- `BOOTSTRAP.md`: seleção das skills antes de agir;
+- `.codex-plugin/plugin.json`: manifesto do plugin.
+
+### Instalação local
+
+No diretório pai do repositório, adicione-o ao marketplace local ou instale o
+plugin pelo fluxo disponível na sua versão do Codex. Para validar antes:
+
+```bash
+python3 scripts/validate_knowledge_base.py
+```
+
+Se o ambiente possuir o validador oficial de skills, execute-o para cada pasta
+em `skills/`. O uso do plugin começa pelo `BOOTSTRAP.md`; depois carregue apenas
+as skills correspondentes à dor atual.
+
+### Uso recomendado
+
+1. Consulte memória, esta base e projetos relacionados.
+2. Audite o repositório real.
+3. Monte o inventário de ferramentas.
+4. Crie e aprove o `SPEC.md`.
+5. Execute etapas curtas com validação e aprovação humana.

@@ -1,0 +1,3 @@
+display_name: AI Knowledge Base
+short_description: Workflow reutilizável para projetos
+default_prompt: Consulte as skills relevantes antes de agir; audite contexto, ferramentas e projetos existentes antes de construir.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Contexto e decisões"
+  short_description: "Evite duplicação e ambiguidades"
+  default_prompt: "Use $contexto-e-decisoes para consultar memória, base e projetos relacionados antes de propor uma solução."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Diagnóstico de repositório"
+  short_description: "Audite o repositório real"
+  default_prompt: "Use $diagnostico-de-repositorio para auditar estrutura, legado, mocks e código reaproveitável antes de construir."
