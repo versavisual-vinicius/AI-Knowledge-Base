@@ -14,8 +14,15 @@ codex plugin list
 
 ## Claude Code
 
-Instale o plugin local ou carregue `CLAUDE.md`. Confirme que `skills/` e
-`hooks/hooks.json` foram descobertos; reinicie a sessão após atualizar o plugin.
+No diretório raiz do repositório, carregue o plugin na sessão local:
+
+```bash
+claude --plugin-dir "$PWD"
+```
+
+Dentro da sessão, confirme as skills com `/help` e recarregue após alterações
+com `/reload-plugins`. `CLAUDE.md` é fallback de contexto do projeto; o plugin
+é o caminho recomendado para carregar `skills/` e `hooks/hooks.json`.
 
 ## Antigravity
 
@@ -41,18 +48,39 @@ extensão.
 
 ## OpenCode
 
-Carregue o repositório como plugin local. O entrypoint é
-`.opencode/plugins/ai-knowledge-base.js` e as skills ficam em `skills/`.
+No diretório raiz do repositório, valide a sintaxe e inicie o OpenCode:
+
+```bash
+node --check .opencode/plugins/ai-knowledge-base.js
+opencode
+```
+
+O OpenCode carrega automaticamente plugins JavaScript de
+`.opencode/plugins/`; confirme no início da sessão que o bootstrap e as skills
+foram carregados.
 
 ## Kimi Code
 
-Instale o plugin local pelo gerenciador do Kimi e recarregue a sessão. O
-manifesto é `.kimi-plugin/plugin.json`.
+Abra o Kimi no diretório do repositório e instale pelo gerenciador de plugins:
+
+```bash
+kimi
+```
+
+Na sessão, execute `/plugins install https://github.com/versavisual-vinicius/AI-Knowledge-Base`,
+confirme o plugin e reinicie a sessão. O manifesto é `.kimi-plugin/plugin.json`.
 
 ## Pi
 
-Carregue o repositório como pacote local do Pi. O `package.json` declara as
-skills e a extensão `.pi/extensions/ai-knowledge-base.ts`.
+No diretório raiz do repositório, instale o pacote local no escopo do projeto:
+
+```bash
+pi install -l ./
+pi list
+```
+
+Para testar sem persistir a instalação, use `pi -e ./`. O `package.json`
+declara as skills e a extensão `.pi/extensions/ai-knowledge-base.ts`.
 
 ## Regra de segurança
 

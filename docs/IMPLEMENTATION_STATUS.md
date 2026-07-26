@@ -55,4 +55,8 @@
 - Fora do escopo: publicação em marketplace e configuração automática de contas
 - Critério de aceite: origem/licença dos componentes registrada e instalação
   local documentada sem expor credenciais
+- Evidência: `LICENSE`, `THIRD_PARTY_NOTICES.md` e `docs/INSTALLATION.md`; a
+  licença própria MIT e a atribuição MIT do Superpowers estão separadas
+- Validação documental: comandos locais registrados para Claude Code,
+  OpenCode, Kimi e Pi; nenhum login ou instalação externa foi executado
 - Aprovação humana: Pending
