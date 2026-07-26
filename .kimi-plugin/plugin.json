@@ -4,6 +4,8 @@
   "description": "Núcleo de contexto, spec, ferramentas e verificação para projetos.",
   "author": {"name": "VersaVisual"},
   "license": "MIT",
+  "repository": "https://github.com/versavisual-vinicius/AI-Knowledge-Base",
+  "keywords": ["skills", "workflow", "spec", "verification"],
   "skills": "./skills/",
   "sessionStart": {"skill": "contexto-e-decisoes"},
   "interface": {

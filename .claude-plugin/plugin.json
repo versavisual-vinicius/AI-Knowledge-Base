@@ -4,5 +4,8 @@
   "version": "0.2.0",
   "author": {"name": "VersaVisual"},
   "license": "MIT",
+  "homepage": "https://github.com/versavisual-vinicius/AI-Knowledge-Base",
+  "repository": "https://github.com/versavisual-vinicius/AI-Knowledge-Base",
+  "keywords": ["skills", "workflow", "spec", "verification"],
   "skills": "./skills/"
 }

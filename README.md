@@ -1,6 +1,11 @@
 # AI Knowledge Base
 
-Base de conhecimento reutilizável para orientar ferramentas de IA em projetos da VersaVisual.
+Base pública e reutilizável de skills, contexto e gates para orientar agentes
+de IA em projetos da VersaVisual.
+
+[![Validate AI Knowledge Base](https://github.com/versavisual-vinicius/AI-Knowledge-Base/actions/workflows/validate.yml/badge.svg)](https://github.com/versavisual-vinicius/AI-Knowledge-Base/actions/workflows/validate.yml)
+
+Repositório: https://github.com/versavisual-vinicius/AI-Knowledge-Base
 
 ## Objetivo
 
@@ -42,6 +47,20 @@ Este repositório também é um plugin Codex instalável. O núcleo fica em:
 - `BOOTSTRAP.md`: seleção das skills antes de agir;
 - `.codex-plugin/plugin.json`: manifesto do plugin.
 
+### Início rápido público
+
+```bash
+git clone https://github.com/versavisual-vinicius/AI-Knowledge-Base.git
+cd AI-Knowledge-Base
+python3 scripts/validate_knowledge_base.py
+python3 scripts/validate_adapters.py
+python3 scripts/run_evals.py --smoke
+```
+
+Depois, leia `BOOTSTRAP.md`, selecione o adapter do seu harness e consulte
+`docs/INSTALLATION.md`. O núcleo é agnóstico de fornecedor, mas o runtime de
+cada harness deve ser validado no ambiente que o utiliza.
+
 ### Instalação local
 
 No diretório pai do repositório, adicione-o ao marketplace local ou instale o
@@ -62,3 +81,11 @@ as skills correspondentes à dor atual.
 3. Monte o inventário de ferramentas.
 4. Crie e aprove o `SPEC.md`.
 5. Execute etapas curtas com validação e aprovação humana.
+
+## Limites e contribuição
+
+Esta base orienta o agente; não substitui memória, permissões, ferramentas ou
+validação real do harness. Consulte `SECURITY.md`, `CONTRIBUTING.md` e
+`RELEASE-NOTES.md` antes de colaborar.
+
+Licença: [MIT](LICENSE).

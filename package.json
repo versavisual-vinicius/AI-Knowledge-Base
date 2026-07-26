@@ -2,6 +2,10 @@
   "name": "ai-knowledge-base",
   "version": "0.2.0",
   "description": "Portable project workflow skills for coding agents",
+  "homepage": "https://github.com/versavisual-vinicius/AI-Knowledge-Base",
+  "repository": "https://github.com/versavisual-vinicius/AI-Knowledge-Base",
+  "license": "MIT",
+  "keywords": ["agent-skills", "workflow", "spec", "project-context", "verification"],
   "type": "module",
   "main": ".opencode/plugins/ai-knowledge-base.js",
   "pi": {

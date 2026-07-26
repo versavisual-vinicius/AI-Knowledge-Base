@@ -3,9 +3,24 @@
 O repositório é uma fonte única de skills e adapters. Instale somente no
 harness que será usado e valide antes de iniciar um projeto.
 
+## Pré-validação pública
+
+Em qualquer ambiente com Git e Python 3:
+
+```bash
+git clone https://github.com/versavisual-vinicius/AI-Knowledge-Base.git
+cd AI-Knowledge-Base
+python3 scripts/validate_knowledge_base.py
+python3 scripts/validate_adapters.py
+python3 scripts/run_evals.py --smoke
+```
+
+Esses comandos não exigem tokens, chamadas de LLM ou dependências npm.
+
 ## Codex
 
-Use o plugin Codex local/marketplace e confirme com:
+Use o plugin Codex local/marketplace ou abra o checkout como projeto. Confirme
+com:
 
 ```bash
 python3 scripts/validate_knowledge_base.py
@@ -97,3 +112,15 @@ python3 scripts/package_core.py --output /tmp/ai-knowledge-base-core.zip
 
 O pacote inclui manifestos, adapters, skills, referências, evals, scripts e
 documentação. O diretório `dist/` e artefatos temporários não são incluídos.
+
+## Atualização
+
+Para atualizar um checkout público:
+
+```bash
+git pull --ff-only origin main
+python3 scripts/validate_knowledge_base.py
+python3 scripts/validate_adapters.py
+```
+
+Reinicie o harness após atualizar plugins, skills ou hooks.

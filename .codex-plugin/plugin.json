@@ -3,6 +3,10 @@
   "version": "0.2.0",
   "description": "Skills reutilizáveis para contexto, especificação, diagnóstico, ferramentas e verificação de projetos.",
   "author": {"name": "VersaVisual"},
+  "homepage": "https://github.com/versavisual-vinicius/AI-Knowledge-Base",
+  "repository": "https://github.com/versavisual-vinicius/AI-Knowledge-Base",
+  "license": "MIT",
+  "keywords": ["skills", "workflow", "spec", "project-context", "verification"],
   "skills": "./skills/",
   "interface": {
     "displayName": "AI Knowledge Base",
