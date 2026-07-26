@@ -17,6 +17,49 @@ Considere, nesta ordem:
 4. Arquitetura e padrões gerais desta base.
 5. Suposições técnicas razoáveis, sempre identificadas como suposições.
 
+## Regra ouro: memória, base e projetos existentes
+
+Antes de propor escopo, arquitetura ou implementação, consulte obrigatoriamente:
+
+1. a memória disponível e o contexto persistente autorizado;
+2. esta base de conhecimento, incluindo padrões, playbooks e decisões;
+3. os repositórios e projetos existentes do usuário que possam ter relação;
+4. as implementações, componentes, documentos e integrações reaproveitáveis.
+
+Quando um projeto novo tiver a mesma finalidade, domínio ou segmentação de um
+projeto existente, a primeira opção deve ser unificar, estender ou aprimorar o
+projeto existente. Criar uma solução paralela exige justificar a diferença de
+escopo, público, ciclo de vida, isolamento ou requisito técnico.
+
+O agente deve registrar no `SPEC.md` o que foi consultado, o que será
+reutilizado, o que será substituído e por que uma nova estrutura é necessária.
+Memória antiga não substitui a verificação do estado atual dos arquivos.
+
+## Regra master: mapa de ferramentas antes da construção
+
+Antes de fechar o escopo ou iniciar qualquer construção, faça um inventário das
+capacidades disponíveis para o projeto:
+
+- ferramentas e skills disponíveis na base do agente;
+- ferramentas, assinaturas, serviços e ambientes aos quais o usuário possui
+  acesso autorizado;
+- ferramentas já instaladas ou usadas nos projetos existentes;
+- requisitos de execução, validação, publicação, autenticação e observabilidade;
+- custos, limites, riscos de lock-in e dependências externas.
+
+Registre no `SPEC.md` um guia de ferramentas necessário do início ao fim,
+classificando cada item como `Disponível`, `A confirmar`, `Alternativa` ou
+`Bloqueador`. Nunca invente uma assinatura, permissão, integração ou capacidade.
+
+Se uma ferramenta necessária não estiver disponível, pesquise alternativas de
+forma abrangente no catálogo público
+`https://github.com/ripienaar/free-for-dev`, além da documentação oficial da
+ferramenta escolhida. Compare adequação, limites, privacidade, custo,
+manutenção e esforço de integração antes de recomendar uma opção.
+
+Não iniciar a construção enquanto um requisito essencial estiver sem ferramenta
+viável, sem alternativa aprovada ou sem uma decisão explícita de adiamento.
+
 ## Modo de trabalho
 
 Antes de modificar ou propor qualquer solução:
