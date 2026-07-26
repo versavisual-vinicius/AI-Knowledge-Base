@@ -43,7 +43,8 @@
 - Fora do escopo: executar chamadas pagas ou autenticar sete LLMs
 - Critério de aceite: cada harness e cada dor recorrente possuem cenário,
   prompt e comportamento esperado
-- Evidência: `evals/cases.json` e `evals/README.md`
+- Evidência: `evals/cases.json`, `evals/README.md` e
+  `scripts/run_evals.py`; smoke test executado com 14/14 casos aprovados
 - Limitação: execução real concluída no Codex e no Antigravity neste ambiente;
   os demais casos aguardam os respectivos CLIs
 - Aprovação humana: Approved — Vini, 2026-07-26
@@ -75,5 +76,6 @@
   validate .`, validadores do núcleo e `scripts/package_core.py` produziram e
   verificaram um ZIP de 49 arquivos
 - Limitações: Claude, Gemini CLI, OpenCode, Kimi e Pi ainda aguardam sessões
-  reais; os testes comportamentais completos continuam não automatizados
+  reais; o executor automatiza a avaliação dos resultados, mas não substitui
+  a execução do caso no harness do usuário
 - Aprovação humana: Approved — Vini, 2026-07-26
