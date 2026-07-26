@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revisão de etapa"
+  short_description: "Duas revisões e auditoria final do ciclo"
+  default_prompt: "Use $revisao-de-etapa para revisar esta etapa duas vezes, corrigir inconsistências e registrar o gate humano."

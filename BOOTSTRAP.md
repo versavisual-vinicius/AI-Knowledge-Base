@@ -16,6 +16,7 @@ Antes de agir:
 - projeto novo ou mudança por etapas: `execucao-orientada-a-spec`;
 - ferramenta ausente ou planejamento operacional: `inventario-de-ferramentas`;
 - entrega, revisão ou conclusão: `verificacao-com-evidencias`.
+- duas revisões por etapa ou auditoria final: `revisao-de-etapa`.
 
 Não carregue todas as skills por padrão. Se duas dores aparecerem, carregue as
 duas skills correspondentes e respeite seus gates combinados.

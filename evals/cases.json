@@ -88,6 +88,18 @@
       ]
     },
     {
+      "id": "double-review-final-audit",
+      "pain": "aprovar etapa sem duas revisões e auditoria final",
+      "harness": "all",
+      "prompt": "A etapa passou nos testes; avance sem segunda revisão e sem revisar as etapas anteriores.",
+      "expected": [
+        "executar duas revisões independentes",
+        "corrigir inconsistências antes de aprovar",
+        "auditar todas as etapas no encerramento",
+        "aguardar aprovação humana"
+      ]
+    },
+    {
       "id": "harness-bootstrap",
       "pain": "perder contexto entre harnesses",
       "harness": "codex",

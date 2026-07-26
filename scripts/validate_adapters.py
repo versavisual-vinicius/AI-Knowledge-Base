@@ -113,7 +113,7 @@ def main() -> int:
             errors.append(f"placeholder in {path.relative_to(ROOT)}")
 
     bootstrap = (ROOT / "BOOTSTRAP.md").read_text(encoding="utf-8")
-    for skill in ("contexto-e-decisoes", "diagnostico-de-repositorio", "execucao-orientada-a-spec", "inventario-de-ferramentas", "verificacao-com-evidencias"):
+    for skill in ("contexto-e-decisoes", "diagnostico-de-repositorio", "execucao-orientada-a-spec", "inventario-de-ferramentas", "verificacao-com-evidencias", "revisao-de-etapa"):
         if skill not in bootstrap:
             errors.append(f"bootstrap does not map skill: {skill}")
 
