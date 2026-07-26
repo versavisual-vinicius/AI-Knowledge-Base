@@ -108,8 +108,9 @@ VersaVisual e evitando copiar integralmente metodologias ou assets de terceiros.
 ## Aprovação humana
 
 - Revisor: Vini
-- Status: Approved — P1, P2, P3, P4 e P5 aprovadas por Vini, 2026-07-26
-- Observações: P6 está autorizada; as etapas seguintes continuam condicionadas
+- Status: Approved — P1, P2, P3, P4, P5 e P6 aprovadas por Vini, 2026-07-26
+- Observações: auditoria final dupla P1–P6 concluída em 2026-07-26; publicação
+  continua condicionada a autorização explícita.
   a revisão e aprovação humana próprias.
 
 ## Estado das etapas
@@ -119,4 +120,13 @@ VersaVisual e evitando copiar integralmente metodologias ou assets de terceiros.
 - P3 — Testes determinísticos e evals públicos: Approved — Vini, 2026-07-26
 - P4 — Evidência de runtime por harness: Approved — Vini, 2026-07-26
 - P5 — Expansão seletiva de skills: Approved — Vini, 2026-07-26
-- P6 — Documentação pública e identidade própria: In Progress
+- P6 — Documentação pública e identidade própria: Approved — Vini, 2026-07-26
+
+## Auditoria final P1–P6
+
+- Passagem 1: contratos, 6 skills, 7 adapters, 15/15 evals, 5 testes, sintaxe
+  OpenCode e estados das etapas validados.
+- Passagem 2: pacote reproduzido deterministicamente, 60 arquivos obrigatórios
+  conferidos e diff sem inconsistências.
+- Resultado: todas as etapas P1–P6 aprovadas; nenhuma pendência técnica aberta
+  dentro desse escopo. A P7 de release e manutenção permanece futura.
