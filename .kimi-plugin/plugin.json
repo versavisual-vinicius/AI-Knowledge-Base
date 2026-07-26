@@ -1,0 +1,17 @@
+{
+  "name": "ai-knowledge-base",
+  "version": "0.2.0",
+  "description": "Núcleo de contexto, spec, ferramentas e verificação para projetos.",
+  "author": {"name": "VersaVisual"},
+  "license": "MIT",
+  "skills": "./skills/",
+  "sessionStart": {"skill": "contexto-e-decisoes"},
+  "interface": {
+    "displayName": "AI Knowledge Base",
+    "shortDescription": "Workflow portátil para projetos",
+    "longDescription": "Consulte contexto, ferramentas e especificação antes de agir em projetos.",
+    "developerName": "VersaVisual",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://github.com/versavisual-vinicius/AI-Knowledge-Base"
+  }
+}

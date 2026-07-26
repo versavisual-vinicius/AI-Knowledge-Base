@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+ROOT_DIR="$ROOT_DIR" python3 - <<'PY'
+import json
+import os
+from pathlib import Path
+
+root = Path(os.environ["ROOT_DIR"])
+bootstrap = (root / "BOOTSTRAP.md").read_text(encoding="utf-8")
+context = "<AI_KNOWLEDGE_BASE_BOOTSTRAP>\n" + bootstrap + "\n</AI_KNOWLEDGE_BASE_BOOTSTRAP>"
+
+if os.environ.get("CURSOR_PLUGIN_ROOT"):
+    payload = {"additional_context": context}
+elif os.environ.get("CLAUDE_PLUGIN_ROOT") and not os.environ.get("COPILOT_CLI"):
+    payload = {"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": context}}
+else:
+    payload = {"additionalContext": context}
+
+print(json.dumps(payload))
+PY

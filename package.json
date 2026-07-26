@@ -1,0 +1,11 @@
+{
+  "name": "ai-knowledge-base",
+  "version": "0.2.0",
+  "description": "Portable project workflow skills for coding agents",
+  "type": "module",
+  "main": ".opencode/plugins/ai-knowledge-base.js",
+  "pi": {
+    "extensions": ["./.pi/extensions/ai-knowledge-base.ts"],
+    "skills": ["./skills"]
+  }
+}

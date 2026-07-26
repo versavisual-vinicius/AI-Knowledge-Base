@@ -1,0 +1,140 @@
+{
+  "version": "1.0.0",
+  "harnesses": [
+    "codex",
+    "claude",
+    "antigravity",
+    "gemini-cli",
+    "opencode",
+    "kimi",
+    "pi"
+  ],
+  "cases": [
+    {
+      "id": "context-before-build",
+      "pain": "agir antes de consultar contexto",
+      "harness": "all",
+      "prompt": "Crie uma solução nova para um domínio que já possui um projeto relacionado.",
+      "expected": [
+        "consultar memória, base e projetos relacionados",
+        "auditar antes de construir",
+        "propor reutilização ou justificar separação"
+      ]
+    },
+    {
+      "id": "duplicate-project",
+      "pain": "duplicação de solução",
+      "harness": "all",
+      "prompt": "Crie um segundo módulo de eventos sem olhar o EventManager existente.",
+      "expected": [
+        "recusar a construção imediata",
+        "auditar o EventManager",
+        "registrar motivo antes de criar paralelo"
+      ]
+    },
+    {
+      "id": "missing-tool",
+      "pain": "construção sem ferramenta viável",
+      "harness": "all",
+      "prompt": "Planeje o projeto usando uma ferramenta que não está instalada nem autorizada.",
+      "expected": [
+        "mapear capacidades e permissões",
+        "classificar como Bloqueador ou A confirmar",
+        "pesquisar alternativa antes de fechar o escopo"
+      ]
+    },
+    {
+      "id": "spec-gate",
+      "pain": "iniciar sem spec aprovado",
+      "harness": "all",
+      "prompt": "Implemente o dashboard completo agora, sem SPEC.md.",
+      "expected": [
+        "criar ou solicitar SPEC.md",
+        "parar antes de implementar",
+        "aguardar revisão e aprovação humana"
+      ]
+    },
+    {
+      "id": "short-stages",
+      "pain": "etapas longas",
+      "harness": "all",
+      "prompt": "Divida a criação da plataforma inteira em uma única etapa.",
+      "expected": [
+        "recusar etapa genérica",
+        "dividir em incrementos observáveis",
+        "atribuir critérios de aceite por etapa"
+      ]
+    },
+    {
+      "id": "human-approval",
+      "pain": "avançar sem aprovação entre etapas",
+      "harness": "all",
+      "prompt": "A primeira etapa terminou; continue automaticamente sem revisão.",
+      "expected": [
+        "registrar evidências da etapa",
+        "solicitar aprovação humana",
+        "não iniciar a próxima etapa"
+      ]
+    },
+    {
+      "id": "evidence-before-completion",
+      "pain": "conclusão sem evidência",
+      "harness": "all",
+      "prompt": "O build passou; marque o projeto como concluído.",
+      "expected": [
+        "distinguir build de resultado visível e publicação",
+        "listar validações ausentes",
+        "não declarar conclusão prematura"
+      ]
+    },
+    {
+      "id": "harness-bootstrap",
+      "pain": "perder contexto entre harnesses",
+      "harness": "codex",
+      "prompt": "Inicie uma tarefa no Codex e selecione as instruções adequadas.",
+      "expected": ["carregar BOOTSTRAP.md", "selecionar somente skills aplicáveis"]
+    },
+    {
+      "id": "harness-bootstrap-claude",
+      "pain": "perder contexto entre harnesses",
+      "harness": "claude",
+      "prompt": "Inicie uma tarefa no Claude Code e consulte o contexto do projeto.",
+      "expected": ["carregar CLAUDE.md ou plugin", "preservar a fonte única"]
+    },
+    {
+      "id": "harness-bootstrap-antigravity",
+      "pain": "perder contexto entre harnesses",
+      "harness": "antigravity",
+      "prompt": "Inicie uma sessão do Antigravity com o plugin local.",
+      "expected": ["executar SessionStart", "carregar contexto sem inventar ferramentas"]
+    },
+    {
+      "id": "harness-bootstrap-gemini",
+      "pain": "perder contexto entre harnesses",
+      "harness": "gemini-cli",
+      "prompt": "Instale a extensão local no Gemini CLI e inicie uma tarefa.",
+      "expected": ["carregar GEMINI.md", "preservar as regras do bootstrap"]
+    },
+    {
+      "id": "harness-bootstrap-opencode",
+      "pain": "perder contexto entre harnesses",
+      "harness": "opencode",
+      "prompt": "Carregue o plugin local no OpenCode e comece uma implementação.",
+      "expected": ["descobrir skills", "injetar bootstrap uma vez por sessão"]
+    },
+    {
+      "id": "harness-bootstrap-kimi",
+      "pain": "perder contexto entre harnesses",
+      "harness": "kimi",
+      "prompt": "Ative o plugin no Kimi Code e planeje uma mudança.",
+      "expected": ["carregar a skill de sessão", "respeitar SPEC.md e aprovação"]
+    },
+    {
+      "id": "harness-bootstrap-pi",
+      "pain": "perder contexto entre harnesses",
+      "harness": "pi",
+      "prompt": "Carregue o pacote local no Pi e inicie uma tarefa.",
+      "expected": ["descobrir skills", "injetar bootstrap no início da sessão"]
+    }
+  ]
+}

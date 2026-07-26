@@ -1,0 +1,8 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "ai-knowledge-base",
+  "description": "Núcleo portátil de contexto, skills e gates para agentes de desenvolvimento.",
+  "version": "0.2.0",
+  "hooks": "./hooks.json",
+  "skills": "./skills/"
+}

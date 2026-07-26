@@ -4,6 +4,9 @@ Use estes casos para testar se o agente seleciona a skill correta e respeita os
 gates. A avaliação deve observar a resposta e os arquivos gerados, não apenas a
 presença de palavras-chave.
 
+O catálogo machine-readable está em `cases.json`; cada cenário possui `id`,
+`pain`, `harness`, `prompt` e `expected`.
+
 ## Caso 1 — Duplicação de produto
 
 Prompt: “Crie um novo módulo de eventos para um projeto que já possui um

@@ -1,0 +1,6 @@
+{
+  "name": "ai-knowledge-base",
+  "description": "Núcleo portátil de workflow e contexto para projetos.",
+  "version": "0.2.0",
+  "contextFileName": "GEMINI.md"
+}

@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${extensionPath}/hooks/session-start"
+          }
+        ]
+      }
+    ]
+  }
+}
