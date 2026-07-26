@@ -21,6 +21,7 @@ inclua tokens, cookies, transcripts completos ou dados pessoais.
 
 - `runtime validated`: comando real executado e resultado observado registrado;
 - `runtime pending`: adapter disponível, mas sem execução real registrada;
+- `runtime skipped`: execução conscientemente fora do escopo desta versão;
 - `blocked`: execução impedida por ausência, erro ou permissão do harness.
 
 ## Evidências já registradas

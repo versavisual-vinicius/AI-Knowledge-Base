@@ -121,6 +121,7 @@ VersaVisual e evitando copiar integralmente metodologias ou assets de terceiros.
 - P4 — Evidência de runtime por harness: Approved — Vini, 2026-07-26
 - P5 — Expansão seletiva de skills: Approved — Vini, 2026-07-26
 - P6 — Documentação pública e identidade própria: Approved — Vini, 2026-07-26
+- P7 — Release e manutenção: Prepared — release 0.3.0 local, 2026-07-26
 
 ## Auditoria final P1–P6
 
@@ -128,5 +129,5 @@ VersaVisual e evitando copiar integralmente metodologias ou assets de terceiros.
   OpenCode e estados das etapas validados.
 - Passagem 2: pacote reproduzido deterministicamente, 60 arquivos obrigatórios
   conferidos e diff sem inconsistências.
-- Resultado: todas as etapas P1–P6 aprovadas; nenhuma pendência técnica aberta
-  dentro desse escopo. A P7 de release e manutenção permanece futura.
+- Resultado: todas as etapas P1–P6 aprovadas e P7 preparada localmente; a
+  publicação da release e a manutenção contínua permanecem condicionadas.

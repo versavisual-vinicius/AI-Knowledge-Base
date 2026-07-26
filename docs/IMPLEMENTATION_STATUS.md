@@ -19,8 +19,9 @@
   prevista
 - Evidência local: manifests JSON, plugin Antigravity, hooks SessionStart,
   plugin OpenCode e extensão Pi criados; sintaxe e bootstrap validados
-- Validação real pendente: somente `codex` e `agy` estão instalados neste Mac;
-  Claude, Gemini CLI, OpenCode, Kimi e Pi não foram executados localmente
+- Validação real pendente: `codex` e `agy` foram executados neste Mac; Gemini
+  CLI foi instalado, mas seu runtime foi deliberadamente pulado em favor do
+  Antigravity; Claude, OpenCode, Kimi e Pi não foram executados localmente
 - Aprovação humana: Approved — Vini, 2026-07-26
 
 ## Etapa 3 — Validação multiplataforma
@@ -75,7 +76,8 @@
   manifesto, `SPEC.md` e cinco skills sem alterar arquivos; `agy plugin
   validate .`, validadores do núcleo e `scripts/package_core.py` produziram e
   verificaram um ZIP determinístico de 57 arquivos
-- Limitações: Claude, Gemini CLI, OpenCode, Kimi e Pi ainda aguardam sessões
-  reais; o executor automatiza a avaliação dos resultados, mas não substitui
-  a execução do caso no harness do usuário
+- Limitações: Claude, OpenCode, Kimi e Pi ainda aguardam sessões reais; Gemini
+  CLI permanece fora do escopo desta release; o executor automatiza a
+  avaliação dos resultados, mas não substitui a execução do caso no harness do
+  usuário
 - Aprovação humana: Approved — Vini, 2026-07-26

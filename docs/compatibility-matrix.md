@@ -12,7 +12,7 @@ O formato obrigatório para novas evidências está em
 | Codex | plugin manifest + `BOOTSTRAP.md` | Sim | Plugin | Implemented; runtime validated |
 | Claude Code | `CLAUDE.md` ou plugin | Sim | Configuração/plugin | Implemented; runtime pending |
 | Antigravity | extensão ou instrução de sessão | A confirmar | Extensão | Implemented; runtime validated |
-| Gemini CLI | `GEMINI.md` ou extensão | A confirmar | Extensão | Implemented; runtime pending |
+| Gemini CLI | `GEMINI.md` ou extensão | A confirmar | Extensão | Implemented; runtime skipped by scope (Antigravity) |
 | OpenCode | instrução de instalação própria | A confirmar | Plugin | Implemented; runtime pending |
 | Kimi | plugin ou comando de instalação | A confirmar | Plugin | Implemented; runtime pending |
 | Pi | pacote com skills | Sim | Extensão opcional | Implemented; runtime pending |

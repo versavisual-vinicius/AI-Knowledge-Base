@@ -29,6 +29,7 @@ DIRECTORIES = (
 ROOT_FILES = (
     "BOOTSTRAP.md",
     "CLAUDE.md",
+    "CHANGELOG.md",
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
     "GEMINI.md",
